@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const Custom404 = () => {
     return (
-        <div className="bg-primary text-primary min-h-screen flex flex-col items-center justify-center">
+        <div className='flex flex-col items-center justify-center h-[calc(100vh-100px)]'>
             <h1 className="text-6xl font-bold mb-4">404</h1>
             <p className="text-2xl mb-8">Page Not Found</p>
             <Link href="/" passHref legacyBehavior>
