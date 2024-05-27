@@ -15,7 +15,7 @@
   }
 
   @layer components {
-    .bg-dark {
+    .bg-primary {
       background-color: var(--bg-color);
     }
     .text-primary {
