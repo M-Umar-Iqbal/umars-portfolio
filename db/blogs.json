@@ -1,0 +1,28 @@
+{
+  "blogs": [
+    {
+      "id": 1,
+      "title": "Getting Started with Next.js",
+      "author": "John Doe",
+      "date": "2024-05-15",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum condimentum nisl at massa dictum, at commodo magna commodo. Nam sit amet tempus elit.",
+      "tags": ["Next.js", "React", "Web Development"]
+    },
+    {
+      "id": 2,
+      "title": "10 Tips for Effective Time Management",
+      "author": "Jane Smith",
+      "date": "2024-04-20",
+      "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+      "tags": ["Time Management", "Productivity"]
+    },
+    {
+      "id": 3,
+      "title": "Introduction to Machine Learning",
+      "author": "Alice Johnson",
+      "date": "2024-03-10",
+      "content": "Nulla facilisi. Sed condimentum arcu quis neque sollicitudin, ac facilisis nisi convallis.",
+      "tags": ["Machine Learning", "AI"]
+    }
+  ]
+}

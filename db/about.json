@@ -1,0 +1,23 @@
+{
+  "about": {
+    "name": "John Doe",
+    "title": "Software Engineer",
+    "location": "New York, USA",
+    "bio": "I'm a passionate software engineer with expertise in web development and a strong interest in artificial intelligence. I enjoy building scalable and efficient applications that solve real-world problems. In my free time, I love to explore new technologies, read books, and play the guitar.",
+    "skills": [
+      "JavaScript",
+      "React",
+      "Node.js",
+      "Python",
+      "HTML",
+      "CSS",
+      "SQL",
+      "Git"
+    ],
+    "socialLinks": {
+      "github": "https://github.com/johndoe",
+      "linkedin": "https://www.linkedin.com/in/johndoe",
+      "twitter": "https://twitter.com/johndoe"
+    }
+  }
+}
