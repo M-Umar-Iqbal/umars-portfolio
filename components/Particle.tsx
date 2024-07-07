@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react';
 import particlesConfig from "../particles-config.json";
-const ParticlesComponent = () => {
+
+const ParticlesComponent: React.FC = () => {
   useEffect(() => {
     if (typeof window !== 'undefined') {
       const loadParticlesJS = async () => {
-        await import('particles.js');
-        window.particlesJS('particles-js', particlesConfig
-        );
+        const { particlesJS } = await import('particles.js');
+        (window as any).particlesJS('particles-js', particlesConfig);
       };
       loadParticlesJS();
     }
@@ -14,4 +14,5 @@ const ParticlesComponent = () => {
 
   return <div id="particles-js" style={{ height: "100%", width: "100%" }} />;
 };
+
 export default ParticlesComponent;
