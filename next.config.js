@@ -1,6 +1,5 @@
-/** @type {import('next').NextConfig} */
 const config = require("config");
-const appConfig = config.get("appConfig");
+const appConfig = config.get("appConfig")
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,

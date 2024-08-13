@@ -1,6 +1,6 @@
 module.exports = {
     appConfig: {
-        appName: "Test Next App",
+        appName: "Umar's Blog",
         pages: {
             contactUs: {
                 form: {
