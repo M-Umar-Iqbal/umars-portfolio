@@ -4,7 +4,7 @@ import React, { useState, FC } from "react";
 import Hamburger from "hamburger-react";
 import { BiLogoDiscordAlt, BiLogoGithub } from "react-icons/bi";
 
-import Links from "./NavLinks";
+import NavLinks from "./NavLinks";
 import { cn } from "@/utils/client-utils";
 import Logo from "@/assets/icons/Logo";
 import ThemeSwitch from "../../ThemeSwitch";
@@ -21,19 +21,19 @@ const Navbar: FC = () => {
             <Logo />
           </Link>
           <nav>
-            <Links className="hidden md:flex" />
+            <NavLinks className="hidden md:flex" />
           </nav>
           <div className="flex items-center gap-2">
             <Link
               className="hidden md:block"
-              href="https://discord.gg/5TnK7wuzw6"
+              href="https://discord.gg"
               target="_blank"
             >
               <BiLogoDiscordAlt size={20} />
             </Link>
             <Link
               className="hidden md:block"
-              href="https://github.com/yassinehaimouch/blog-portfolio"
+              href="https://github.com"
               target="_blank"
             >
               <BiLogoGithub size={20} />
@@ -43,13 +43,14 @@ const Navbar: FC = () => {
               <Hamburger toggled={isOpen} toggle={setOpen} />
             </div>
           </div>
+          {/* Navbar dropdown links for small screens */}
           <div
             className={cn(
               "md:hidden px-8 fixed w-full top-[64px] right-0 border-b border-white/5 bg-white/80 shadow shadow-gray-300/20 backdrop-blur-xl transition dark:bg-dark/80 dark:shadow-xl dark:shadow-black/20 print:hidden py-4",
               isOpen ? "block" : "hidden"
             )}
           >
-            <Links closeMenu={() => setOpen(false)} />
+            <NavLinks closeMenu={() => setOpen(false)} />
           </div>
         </header>
       </MaxWidthWrapper>

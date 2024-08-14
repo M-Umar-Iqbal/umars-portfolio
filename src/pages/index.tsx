@@ -10,8 +10,8 @@ export default function Home() {
         <div className="lg:pl-20">
           <div className="max-w-xs px-2.5 lg:max-w-none">
             <BlurImage
-              height={800}
-              width={800}
+              height={600}
+              width={600}
               src="/images/me.png"
               className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
             />

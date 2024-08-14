@@ -7,5 +7,4 @@ const nextConfig = {
     appConfig
   }
 }
-
 module.exports = nextConfig
