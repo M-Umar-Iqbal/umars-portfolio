@@ -7,7 +7,7 @@ import { MdOpenInNew } from "react-icons/md";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Contact | Yassine Haimouch",
+  title: "Contact | Umar Iqbal",
   description: "Frontend developer, Content creator, and Public speaker",
 };
 
