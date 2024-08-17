@@ -1,5 +1,6 @@
 {
-  "name": "portfolio",
+  "name": "Umar's Portfolio",
+  "author": "Umar Iqbal",
   "version": "0.1.0",
   "private": true,
   "scripts": {

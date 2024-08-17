@@ -12,8 +12,8 @@ export default function Home() {
             <BlurImage
               height={600}
               width={600}
-              src="/images/me.png"
-              className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
+              src="/images/me.jpg"
+              className="aspect-square rotate-2 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
             />
           </div>
         </div>
