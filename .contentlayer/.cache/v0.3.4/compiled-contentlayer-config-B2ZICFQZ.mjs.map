@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../contentlayer.config.ts"],
+  "sourcesContent": ["import { defineDocumentType, makeSource } from \"contentlayer/source-files\"\nimport remarkGfm from \"remark-gfm\"\n\nexport const Post = defineDocumentType(() => ({\n  name: \"Post\",\n  filePathPattern: `**/*.md`, /** pattern to find markdowns files in (src/posts) location  */\n  fields: {\n    title: { type: \"string\", required: true },\n    date: { type: \"date\", required: true },\n    image: { type: \"string\" },\n    summary: { type: \"string\", required: true },\n  },\n  computedFields: {\n    url: {\n      type: \"string\",\n      resolve: (post) => `/articles/${post._raw.flattenedPath}`,\n    },\n  },\n}))\n\nexport default makeSource({\n  contentDirPath: \"src/posts\", /** .md files location */\n  documentTypes: [Post],\n  mdx: {\n    remarkPlugins: [remarkGfm],\n  },\n})"],
+  "mappings": ";AAAA,SAAS,oBAAoB,kBAAkB;AAC/C,OAAO,eAAe;AAEf,IAAM,OAAO,mBAAmB,OAAO;AAAA,EAC5C,MAAM;AAAA,EACN,iBAAiB;AAAA;AAAA,EACjB,QAAQ;AAAA,IACN,OAAO,EAAE,MAAM,UAAU,UAAU,KAAK;AAAA,IACxC,MAAM,EAAE,MAAM,QAAQ,UAAU,KAAK;AAAA,IACrC,OAAO,EAAE,MAAM,SAAS;AAAA,IACxB,SAAS,EAAE,MAAM,UAAU,UAAU,KAAK;AAAA,EAC5C;AAAA,EACA,gBAAgB;AAAA,IACd,KAAK;AAAA,MACH,MAAM;AAAA,MACN,SAAS,CAAC,SAAS,aAAa,KAAK,KAAK,aAAa;AAAA,IACzD;AAAA,EACF;AACF,EAAE;AAEF,IAAO,8BAAQ,WAAW;AAAA,EACxB,gBAAgB;AAAA;AAAA,EAChB,eAAe,CAAC,IAAI;AAAA,EACpB,KAAK;AAAA,IACH,eAAe,CAAC,SAAS;AAAA,EAC3B;AACF,CAAC;",
+  "names": []
+}
