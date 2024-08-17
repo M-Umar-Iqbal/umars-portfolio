@@ -6,7 +6,7 @@ import MaxWidthWrapper from "../MaxWidthWrapper";
 
 const Footer: FC = () => {
   return (
-    <MaxWidthWrapper className="flex items-center justify-between mt-16 md:mt-0 mb-4 text-sm md:text-md text-zinc-500">
+    <MaxWidthWrapper className="flex items-center justify-between mt-16 md:mt-0 pb-[10px] text-sm md:text-md text-zinc-500">
       <p>All rights reserved © Umar Iqbal {new Date().getFullYear()}</p>
       <div className="hidden md:flex gap-4">
         <Link

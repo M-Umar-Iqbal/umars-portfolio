@@ -9,18 +9,18 @@ const dmsans = DM_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://gitcoder.vercel.app/"),
-  title: "Yassine Haimouch",
+  title: "Umar Iqbal",
   description: "Developer, writer, and creator.",
   openGraph: {
-    title: "Yassine Haimouch",
+    title: "Umar Iqbal",
     description: "Developer, writer, and creator.",
     url: "https://gitcoder.vercel.app",
-    siteName: "Yassine Haimouch",
+    siteName: "Umar Iqbal",
     locale: "en_US",
     type: "website",
   },
   twitter: {
-    title: "Yassine Haimouch",
+    title: "Umar Iqbal",
     card: "summary_large_image",
   },
   icons: {
@@ -34,15 +34,10 @@ export default function Layout({
   children: React.ReactNode;
 }>) {
   return (
-    <div
-      className={cn(
-        "bg-slate-50 dark:bg-dark pt-[60px] md:pt-[48px]",
-        dmsans.className
-      )}
-    >
+    <div className={cn("bg-slate-50 dark:bg-dark pt-[60px] md:pt-[60px]", dmsans.className)}>
       <ThemeProvider attribute="class" defaultTheme="light">
         <Navbar />
-        {children}
+          {children}
         <Footer />
       </ThemeProvider>
     </div>
