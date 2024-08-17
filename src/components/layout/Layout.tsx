@@ -4,7 +4,6 @@ import Footer from "@/components/layout/Footer";
 import { DM_Sans } from "next/font/google";
 import { ThemeProvider } from "../ThemeProvider";
 import Navbar from "@/components/layout/Navbar";
-import Script from "next/script";
 
 const dmsans = DM_Sans({ subsets: ["latin"] });
 
@@ -35,20 +34,17 @@ export default function Layout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="antialiased">
-      <body
-        className={cn(
-          "bg-slate-50 dark:bg-dark pt-[60px] md:pt-[48px]",
-          dmsans.className
-        )}
-      >
-        <ThemeProvider attribute="class" defaultTheme="light">
-          <Navbar />
-          {children}
-          <Footer />
-        </ThemeProvider>
-      </body>
-      {/* <Script src="https://scripts.simpleanalyticscdn.com/latest.js"  /> */}
-    </html>
+    <div
+      className={cn(
+        "bg-slate-50 dark:bg-dark pt-[60px] md:pt-[48px]",
+        dmsans.className
+      )}
+    >
+      <ThemeProvider attribute="class" defaultTheme="light">
+        <Navbar />
+        {children}
+        <Footer />
+      </ThemeProvider>
+    </div>
   );
 }
