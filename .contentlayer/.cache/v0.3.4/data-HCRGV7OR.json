@@ -1,0 +1,25 @@
+{
+  "cacheItemsMap": {
+    "articles/articles.md": {
+      "document": {
+        "title": "Unveiling the Architecture Behind My Blog",
+        "date": "2024-03-23T00:00:00.000Z",
+        "image": "/images/posts/blog.png",
+        "summary": "In the vast universe of web development, embarking on the journey of creating your own blog can be both exhilarating and daunting. As I ventured into this endeavor",
+        "_id": "articles/articles.md",
+        "_raw": {
+          "sourceFilePath": "articles/articles.md",
+          "sourceFileName": "articles.md",
+          "sourceFileDir": "articles",
+          "contentType": "markdown",
+          "flattenedPath": "articles/articles"
+        },
+        "type": "Post",
+        "url": "/articles/articles/articles"
+      },
+      "documentHash": "1723652601791",
+      "hasWarnings": false,
+      "documentTypeName": "Post"
+    }
+  }
+}
