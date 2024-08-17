@@ -22,10 +22,10 @@ const Contact: FC = () => {
           className=" dark:opacity-20"
         />
         <div className="lg:order-first lg:row-span-2">
-          <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
+          <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100 animate-slide-top">
             Don&apos;t be a Stranger!
           </h1>
-          <div className="mt-6 text-xl space-y-7 text-zinc-600 dark:text-zinc-400">
+          <div className="mt-6 text-xl animate-slide-top [animation-fill-mode:backwards] [animation-delay:300ms] space-y-7 text-zinc-600 dark:text-zinc-400">
             <p>
               Shoot me an email if you think we&apos;re a great fit and would
               like to work with me and let&apos;s have a great time while
@@ -34,27 +34,27 @@ const Contact: FC = () => {
             <div className="flex items-center">
               <p>umar.iqbal.biz@gmail.com</p>
               <Link href="mailTo:umar.iqbal.biz@gmail.com?subject=Hi! Umar">
-              <MdOpenInNew className="ml-[5px] cursor-pointer" size={20} />
-        </Link>
-              </div>
+                <MdOpenInNew className="ml-[5px] cursor-pointer" size={20} />
+              </Link>
+            </div>
           </div>
-          <div className="flex gap-4 mt-6">
-            <Link href="https://github.com/yassinehaimouch" target="_blank">
+          <div className="flex gap-4 mt-6 animate-slide-top [animation-fill-mode:backwards] [animation-delay:800ms]">
+            <Link href="https://github.com" target="_blank">
               <BsGithub size={20} />
             </Link>
             <Link
-              href="https://www.linkedin.com/in/yassinehaimouch"
+              href="https://www.linkedin.com"
               target="_blank"
             >
               <BsLinkedin height={20} />
             </Link>
-            <Link href="https://www.instagram.com/gitcoder" target="_blank">
+            <Link href="https://www.instagram.com" target="_blank">
               <BsInstagram size={20} />
             </Link>
-            <Link href="https://x.com/thegitcoder" target="_blank">
+            <Link href="https://x.com" target="_blank">
               <BsTwitter size={20} />
             </Link>
-            <Link href="https://www.youtube.com/@thegitcoder" target="_blank">
+            <Link href="https://www.youtube.com" target="_blank">
               <BsYoutube size={20} />
             </Link>
           </div>
