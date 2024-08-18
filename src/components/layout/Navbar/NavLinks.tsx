@@ -1,8 +1,7 @@
 import React, { FC } from "react";
 import Link from "next/link";
 import { cn } from "@/utils/client-utils";
-import { BiSolidFolderMinus, BiSolidFile, BiSolidCollection } from "react-icons/bi";
-import { IoIosMailOpen } from "react-icons/io";
+import { HiCollection, HiMailOpen, HiDocumentText, HiBriefcase } from "react-icons/hi";
 import { usePathname } from "next/navigation";
 
 export const getNavigationLinks = (): {
@@ -14,7 +13,7 @@ export const getNavigationLinks = (): {
     {
       label: "Projects",
       icon: (isActiveLink: boolean) => (
-        <BiSolidFolderMinus
+        <HiBriefcase
           className={cn(
             `duration-150 group-hover:text-purple-500 w-5 h-5`,
             isActiveLink ? "text-purple-500" : ""
@@ -26,7 +25,7 @@ export const getNavigationLinks = (): {
     {
       label: "Articles",
       icon: (isActiveLink: boolean) => (
-        <BiSolidFile
+        <HiCollection
           className={cn(
             `duration-150 group-hover:text-purple-500 w-5 h-5`,
             isActiveLink ? "text-purple-500" : ""
@@ -38,7 +37,7 @@ export const getNavigationLinks = (): {
     {
       label: "Uses",
       icon: (isActiveLink: boolean) => (
-        <BiSolidCollection
+        <HiDocumentText
           className={cn(
             `duration-150 group-hover:text-purple-500 w-5 h-5`,
             isActiveLink ? "text-purple-500" : ""
@@ -50,7 +49,7 @@ export const getNavigationLinks = (): {
     {
       label: "Contact",
       icon: (isActiveLink: boolean) => (
-        <IoIosMailOpen
+        <HiMailOpen
           className={cn(
             `duration-150 group-hover:text-purple-500 w-5 h-5`,
             isActiveLink ? "text-purple-500" : ""

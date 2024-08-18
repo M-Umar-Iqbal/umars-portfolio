@@ -5,6 +5,7 @@ import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { BsGithub, BsTwitter, BsLinkedin, BsInstagram, BsYoutube } from "react-icons/bs";
 import { MdOpenInNew } from "react-icons/md";
 import Link from "next/link";
+import SocialLinks from "@/components/SocialLinks";
 
 export const metadata: Metadata = {
   title: "Contact | Umar Iqbal",
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
 
 const Contact: FC = () => {
   return (
-    <MaxWidthWrapper className="md:h-[calc(100vh-48px-40px)] mt-20 md:mt-0 flex items-center">
+    <MaxWidthWrapper className="md:h-[calc(100vh-48px-50px)] mt-20 md:mt-0 flex items-center">
       <div className="flex items-center flex-col lg:flex-row gap-10">
         <BlurImage
           height={300}
@@ -39,24 +40,7 @@ const Contact: FC = () => {
             </div>
           </div>
           <div className="flex gap-4 mt-6 animate-slide-top [animation-fill-mode:backwards] [animation-delay:800ms]">
-            <Link href="https://github.com" target="_blank">
-              <BsGithub size={20} />
-            </Link>
-            <Link
-              href="https://www.linkedin.com"
-              target="_blank"
-            >
-              <BsLinkedin height={20} />
-            </Link>
-            <Link href="https://www.instagram.com" target="_blank">
-              <BsInstagram size={20} />
-            </Link>
-            <Link href="https://x.com" target="_blank">
-              <BsTwitter size={20} />
-            </Link>
-            <Link href="https://www.youtube.com" target="_blank">
-              <BsYoutube size={20} />
-            </Link>
+              <SocialLinks />
           </div>
         </div>
       </div>
