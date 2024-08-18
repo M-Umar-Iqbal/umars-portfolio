@@ -23,7 +23,7 @@ In the realm of styling, Tailwind CSS reigns supreme with its utility-first appr
 
 ### Additional Dependencies
 
-- **@radix-ui/react-icons**: Providing a vast collection of accessible icons to enhance user interactions.
+- **react-icons**: Providing a vast collection of accessible icons to enhance user interactions.
 - **@theme-toggles/react**: Enabling seamless theme switching functionality for enhanced user experience.
 - **clsx**: Simplifying class names management for conditional styling within React components.
 - **contentlayer**: Facilitating content management and structuring through Markdown-based files.
