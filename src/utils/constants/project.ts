@@ -19,5 +19,14 @@ export const projects = [
       img: "/images/projects/project-2.jpg",
       projectTags: ["reactjs","nextjs", "tailwindcss"],
     },
+    {
+      id: "project-3",
+      name: "Startup landing page",
+      description: "A startup company landing page designed by using HTML, CSS and bootstrap.",
+      demo: "https://startup-landing-page-steel-zeta.vercel.app/",
+      github: "https://github.com/M-Umar-Iqbal/startup-landing-page",
+      img: "/images/projects/startup-landing-page/img-1.png",
+      projectTags: ["html5","css3", "bootstrap"],
+    },
   ];
   
