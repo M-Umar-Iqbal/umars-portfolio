@@ -108,4 +108,4 @@ export const generateMetadata = ({ params }: ArticleProps) => {
 };
 ```
 
-Happy coding, Check my [GitHub repo](https://github.com/yassinehaimouch/gitcoder.vercel.app)
+Happy coding, Check my [GitHub Profile](https://github.com/M-Umar-Iqbal)
