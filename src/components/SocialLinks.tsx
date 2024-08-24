@@ -23,7 +23,7 @@ function SocialLinks() {
             <Link href="https://www.youtube.com" target="_blank">
                 <AiFillYoutube size={20} />
             </Link>
-            <Link href="https://x.com/thegitcoder" target="_blank">
+            <Link href="https://x.com" target="_blank">
                 <AiOutlineX size={20} />
             </Link>
         </>

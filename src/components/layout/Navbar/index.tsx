@@ -26,14 +26,14 @@ const Navbar: FC = () => {
           <div className="flex items-center gap-2">
             <Link
               className="hidden md:block"
-              href="https://discord.gg"
+              href="https://discord.gg/zHGAQbn4"
               target="_blank"
             >
               <AiOutlineDiscord size={20} />
             </Link>
             <Link
               className="hidden md:block"
-              href="https://github.com"
+              href="https://github.com/M-Umar-Iqbal"
               target="_blank"
             >
               <AiFillGithub size={20} />
