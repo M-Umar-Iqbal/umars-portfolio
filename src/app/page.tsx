@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "",
+        url: "https://umars-portfolio-smoky.vercel.app/og-bg.png",
         alt: "me",
       },
     ],

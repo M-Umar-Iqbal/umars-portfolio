@@ -3,6 +3,8 @@ title: How to generate dynamic OG image with NextJs
 date: 2024-05-13
 image: "/images/posts/og.png"
 summary: "An Open Graph image or OG image is the image that is displayed on social media accounts when you or someone else post a link to an article or a video from your website"
+author: "Umar Iqbal"
+ogImage: ""
 ---
 
 ## Introduction
@@ -13,7 +15,7 @@ An Open Graph image or OG image is the image that is displayed on social media a
 
 #### Step 1: Add image inside public folder that has empty space `og-bg.jpg`
 
-![background-image](https://gitcoder.vercel.app/og)
+![background-image](https://umars-portfolio-smoky.vercel.app/og)
 
 #### Step 2: Create new folder inside app directory and name it OG then create `route.tsx` (jsx) file
 
@@ -34,7 +36,7 @@ export async function GET(req: NextRequest) {
           height: '100%',
           width: '100%',
           display: 'flex',
-          flexDirection: 'column',  
+          flexDirection: 'column',
           alignItems: 'flex-start',
           justifyContent: 'center',
           backgroundImage: 'url(http://localhost:3000/og-bg.jpg)',
@@ -67,7 +69,7 @@ export async function GET(req: NextRequest) {
 
 ### The Result `http://localhost:3000/og?title=HelloWorld`
 
-![background-image](https://gitcoder.vercel.app/og?title=HelloWorld)
+![background-image](https://umars-portfolio-smoky.vercel.app/api/og?title=HelloWorld&author=Umar-Iqbal)
 
 #### Then you can use it in generateMetaData function
 
