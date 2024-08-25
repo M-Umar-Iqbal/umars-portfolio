@@ -1,7 +1,7 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import {isEmpty} from "lodash";
-import { restHelper } from "../../services/rest-helper";
-import { IBlogsData } from "../../utils/types/ResetHelper";
+import { restHelper } from "@/services/rest-helper";
+import { IBlogsData } from "@/utils/types/ResetHelper";
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
   try {

@@ -1,6 +1,35 @@
 import BlurImage from "@/components/BlurImage";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import SocialLinks from "@/components/SocialLinks";
+import { Metadata } from "next";
+
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://umars-portfolio-smoky.vercel.app/"),
+  title: "About | Umar Iqbal",
+  description: "Developer, writer, and creator.",
+  openGraph: {
+    title: "Umar Iqbal",
+    description: "Welcome to my site! I'm a full-stack developer passionate about building robust and innovative solutions. Here, I share about what I've been working on recently, and things that I have learned along the way.",
+    url: "https://umars-portfolio-smoky.vercel.app/",
+    siteName: "Umar Iqbal",
+    locale: "en_US",
+    type: "website",
+    images: [
+      {
+        url: "",
+        alt: "me",
+      },
+    ],
+  },
+  twitter: {
+    title: "Umar Iqbal",
+    card: "summary_large_image",
+  },
+  icons: {
+    icon: "/images/icon.png",
+  },
+};
 
 export default function Home() {
   return (

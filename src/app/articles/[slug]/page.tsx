@@ -12,36 +12,14 @@ interface ArticleProps {
   params: { slug: string };
 }
 
-export async function getStaticPaths() {
-  const slugs = allPosts.map((post) => ({ params: { slug: post._raw.flattenedPath } }));
-  return {
-    paths: slugs,
-    fallback: false,
-  };
-}
-
-export async function getStaticProps({ params }: ArticleProps) {
-  const { slug } = params;
-  if (!slug) {
-    return {
-      props: {
-        params: {}
-      }
-    };
-  }
-  return {
-    props: {
-      params: { slug },
-    },
-  };
-}
+export const generateStaticParams = async () => allPosts.map((post) => ({ slug: post._raw.flattenedPath }));
 
 export const generateMetadata = ({ params }: ArticleProps) => {
   const post = allPosts.find((post) => post._raw.flattenedPath === params?.slug);
   if (!post) return notFound();
 
   let { title, date: publishedTime, summary: description } = post;
-  let ogImage = `/og?title=${title}`;
+  let ogImage = `/og?title=${title}&source=${""}`;
 
   return {
     title,

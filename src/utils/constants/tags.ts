@@ -3,4 +3,7 @@ export const techTags: string[] = [
     "nextjs",
     "tailwindcss",
     "framermotion",
+    "html5",
+    "css3",
+    "bootstrap"
 ];
