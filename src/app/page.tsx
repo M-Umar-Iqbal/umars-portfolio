@@ -3,7 +3,6 @@ import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import SocialLinks from "@/components/SocialLinks";
 import { Metadata } from "next";
 
-
 export const metadata: Metadata = {
   metadataBase: new URL("https://umars-portfolio-smoky.vercel.app/"),
   title: "About | Umar Iqbal",
@@ -17,7 +16,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://umars-portfolio-smoky.vercel.app/og-bg.png",
+        url: "/images/og-bg.png",
         alt: "me",
       },
     ],
