@@ -1,7 +1,9 @@
 import { cn } from "@/utils/client-utils";
 import type { Metadata } from "next";
-import Footer from "@/components/layout/Footer";
+import Script from "next/script";
 import { DM_Sans } from "next/font/google";
+
+import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import "./globals.css";
@@ -35,8 +37,18 @@ export default function Layout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="antialiased">
-              <body
+    <html lang="en">
+      <head>
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-DNK7XEY3L9"></Script>
+        <Script id="google-analytics">
+          {` window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-DNK7XEY3L9');
+          `}
+        </Script>
+      </head>
+      <body
         className={cn(
           "bg-slate-50 dark:bg-dark pt-[60px] md:pt-[48px]",
           dmsans.className
