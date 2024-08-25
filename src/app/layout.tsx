@@ -48,20 +48,15 @@ export default function Layout({
           `}
         </Script>
       </head>
-      <body
-        className={cn(
-          "bg-slate-50 dark:bg-dark pt-[60px] md:pt-[48px]",
-          dmsans.className
-        )}
-      >
-    <div className={cn("bg-slate-50 dark:bg-dark pt-[60px] md:pt-[60px]", dmsans.className)}>
-      <ThemeProvider attribute="class" defaultTheme="light">
-        <Navbar />
-          {children}
-        <Footer />
-      </ThemeProvider>
-    </div>
-    </body>
+      <body>
+        <div className={cn("bg-slate-50 dark:bg-dark pt-[60px] md:pt-[60px]", dmsans.className)}>
+          <ThemeProvider attribute="class" defaultTheme="light">
+            <Navbar />
+            {children}
+            <Footer />
+          </ThemeProvider>
+        </div>
+      </body>
     </html>
   );
 }
