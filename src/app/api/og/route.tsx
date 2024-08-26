@@ -6,14 +6,14 @@ export async function GET(req: NextRequest) {
   const { searchParams, protocol, host } = new URL(req.url)
   const title = searchParams.get('title') || 'No title'
   const author = searchParams.get('author') || 'Anonymous'
-  const date = searchParams.get('date') || '2022-11-08T12:00:00.000Z'
+  const date = searchParams.get('date') || '2024-11-08T12:00:00.000Z'
   const cover = searchParams.get('cover')
 
   const coverUrl =
-    cover &&
+    cover ?
     `${protocol}//${host}/_next/image?url=${encodeURIComponent(
       cover
-    )}&w=1200&q=75`
+    )}&w=1200&q=75` : 'url(https://umars-portfolio-smoky.vercel.app/og-bg.png)'
 
   return new ImageResponse(
     (

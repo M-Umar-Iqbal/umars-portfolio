@@ -3,6 +3,8 @@ title: TailwindCSS Tips I Wish I Learned Earlier
 date: 2024-03-24
 summary: Learn how to enhance user interaction by adding focus rings to interactive elements like buttons in Tailwind CSS. Improve accessibility and user experience with simple yet effective styling techniques.
 image: https://tailwindcss.com/_next/static/media/tailwindcss-mark.3c5441fc7a190fb1800d4a5c7f07ba4b1345a9c8.svg
+author: "Umar Iqbal"
+ogImage: "/og/tw-og.png"
 ---
 
 ### Consistent Sizing

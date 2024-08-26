@@ -17,9 +17,12 @@ export const generateStaticParams = async () => allPosts.map((post) => ({ slug: 
 export const generateMetadata = ({ params }: ArticleProps) => {
   const post = allPosts.find((post) => post._raw.flattenedPath === params?.slug);
   if (!post) return notFound();
-
   let { title, date: publishedTime, summary: description } = post;
-  let ogImage = `/og?title=${title}&source=${""}`;
+  let ogImage = "/api/og"+
+  "?title=" + encodeURIComponent(post.title) +
+  "&author=" + encodeURIComponent(post.author) +
+  "&date=" + encodeURIComponent(post.date) +
+  "&cover=" + encodeURIComponent(post.ogImage);
 
   return {
     title,
