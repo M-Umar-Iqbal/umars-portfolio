@@ -15,7 +15,7 @@ An Open Graph image or OG image is the image that is displayed on social media a
 
 #### Step 1: Add image inside public folder that has empty space `og-bg.jpg`
 
-![background-image](https://umars-portfolio-smoky.vercel.app/og)
+![background-image](https://umars-portfolio-smoky.vercel.app/images/og-bg.png)
 
 #### Step 2: Create new folder inside app directory and name it OG then create `route.tsx` (jsx) file
 
