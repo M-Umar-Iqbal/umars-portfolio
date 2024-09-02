@@ -23,6 +23,18 @@ export const getNavigationLinks = (): {
       href: "/projects",
     },
     {
+      label: "Skills",
+      icon: (isActiveLink: boolean) => (
+        <HiCollection
+          className={cn(
+            `duration-150 group-hover:text-purple-500 w-5 h-5`,
+            isActiveLink ? "text-purple-500" : ""
+          )} size={20}
+        />
+      ),
+      href: "/skills",
+    },
+    {
       label: "Articles",
       icon: (isActiveLink: boolean) => (
         <HiCollection
