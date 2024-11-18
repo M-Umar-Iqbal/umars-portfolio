@@ -5,5 +5,9 @@ export const techTags: string[] = [
     "framermotion",
     "html5",
     "css3",
-    "bootstrap"
+    "bootstrap",
+    "flutter",
+    "java",
+    "androidstudio",
+    "xcode"
 ];
